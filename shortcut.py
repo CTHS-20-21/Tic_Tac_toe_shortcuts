@@ -25,7 +25,7 @@ def check_for_winner(board):
     # Check for a draw
     draw_flag = 0
     for i in range(len(board)):
-        if board[i] is int:
+        if board[i] is int: # can also use if board[i] != 'X' or board[i] != 'O'
             draw_flag = 1
     if draw_flag is 0:
         return "tie"
